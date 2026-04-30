@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WebGIS Application</title>
+
+<link rel="stylesheet" href="../openlayers/ol.css">
+<link rel="stylesheet" href="./style_f.css">
+
+</head>
+
+<body>
+
+<div class="grid-container">
+
+    <div class="side-bar">
+
+        <h2>Base Layers</h2>
+        <label><input type="radio" name="baseLayerRadioButton" value="OSMStandard"> OSM Standard</label><br>
+        <label><input type="radio" name="baseLayerRadioButton" value="OSMHumanitarian"> OSM Humanitarian</label><br>
+        <label><input type="radio" name="baseLayerRadioButton" value="OSMCycle" checked> OSM Cycle</label><br>
+
+        <h2>Thematic Layers</h2>
+        <label><input type="checkbox" value="GeoJSONLayer1" checked> Boundary</label><br>
+        <label><input type="checkbox" value="GeoJSONLayer2" checked> Buildings</label><br>
+        <label><input type="checkbox" value="GeoJSONLayer3" checked> Roads</label><br>
+
+        <h3>Routing</h3>
+        <label>Source</label>
+        <select id="source"></select>
+
+        <label>Destination</label>
+        <select id="destination"></select>
+
+        <button onclick="findRoute()">Find Route</button>
+        <button onclick="clearRoute()">Clear Route</button>
+
+        <h3>GeoLocation</h3>
+        <p id="geolocation">Waiting...</p>
+
+    </div>
+
+    <div id="js-map" class="map"></div>
+
+</div>
+
+<div id="popup" class="ol-popup"></div>
+
+<script src="../openlayers/dist/ol.js"></script>
+<script src="./main_f.js"></script>
+
+</body>
+</html>
