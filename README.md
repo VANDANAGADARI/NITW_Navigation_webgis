@@ -27,5 +27,10 @@ Designed as an academic and practical implementation of WebGIS concepts, this pr
 - Backend integration (PostGIS / APIs)
 - Mobile optimization
 
+
+
+
+
+
 ## Author
 Gadari Vandana
