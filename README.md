@@ -2,8 +2,10 @@
 WebGIS-based campus navigation system for NIT Warangal
 
 # Technical Stack:
-1.Front End: HTML,CSS,JS
 
+## Frontend Skills
+
+![Frontend Skills](https://skillicons.dev/icons?i=html,css,js)
 
 
 
